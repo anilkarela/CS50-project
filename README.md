@@ -2,6 +2,7 @@
 
 #### Video Demo: https://youtu.be/4CZeW3bM17c
 #### Live App: https://vinaycode7.pythonanywhere.com/
+#### Certificate that I got: [CS50 Certificate](https://certificates.cs50.io/97732eab-5289-49b7-bcb3-9dcde80e9312.pdf)
 
 ## Tech Stack
 - Python
