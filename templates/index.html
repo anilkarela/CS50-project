@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <div class="container d-flex justify-content-center">
+        <form action="" method="post">
+            <div class="mb-3">
+                <input type="url" class="form-control" id="url-input" name="url-input" placeholder="Enter URL" required autocomplete="off" />
+            </div>
+            <div class="mb-3">
+                <label for="custom-input" class="form-label">Custom URL:</label>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="link-head"></span>
+                    </div>
+                    <input type="text" class="form-control" name="custom-input" id="custom-input" autocomplete="off" />
+                </div>
+            </div>
+            <div class="d-flex justify-content-center m-4">
+                <button type="submit" class="btn btn-primary">Shorten URL</button>
+            </div>
+            <div class="input-group">
+                <input type="text" class="form-control" id="generated-url" disabled />
+                <div class="input-group-append">
+                    <button class="btn btn-secondary" type="button" id="copy-button" onclick="copyUrl()">
+                        Copy
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="d-flex justify-content-center m-4">
+        <h4 id="message"></h4>
+    </div>
+
+    <div class="d-flex justify-content-center m-4">
+        <h4>View All links at <a href="database" target="_blank">Database</a></h4>
+    </div>
+
+    <script>
+        const FULL = "{{ data['fullUrl'] }}"
+        const SHORT = "{{ data['shortUrl'] }}"
+        const MESSAGE = "{{ data['message'] }}"
+    </script>
+
+    <script src="static/script.js"></script>
+{% endblock %}
