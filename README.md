@@ -1,6 +1,6 @@
-# CS50x Project: URL Shortener
+# Harvard's CS50x Project: URL Shortener
 
-#### Video Demo: MAKE VIDEO
+#### Video Demo: https://youtu.be/4CZeW3bM17c
 #### Live App: https://vinaycode7.pythonanywhere.com/
 
 ## Tech Stack
@@ -121,6 +121,9 @@ This is the main page (home page) that the user sees. It is styled using bootstr
 
 This page contains a table and gets dynamic data from server which is then displayed to the user.
 
+## Future Ideas
+- [ ] Implement user authentication to make private urls and database. So that users can login and save their urls in their own database.
+- [ ] Urls from public database should be removed after 24hrs of inactivity.
 
 ## Contribution
 If you find any bugs or have suggestions for improvements, feel free to open an issue or submit a pull request.
